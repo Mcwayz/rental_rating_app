@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dialog_color"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/txt_upd_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="5dp"
+        android:padding="20dp"
+        android:hint="Date"
+        android:textColorHint="@color/teal_200"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/teal_700"
+        />
+    <EditText
+        android:id="@+id/txt_upd_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="5dp"
+        android:padding="20dp"
+        android:hint="Time"
+        android:textColorHint="@color/teal_200"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/teal_700"
+        />
+
+    <EditText
+        android:id="@+id/txt_upd_monthly_rent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="5dp"
+        android:padding="20dp"
+        android:hint="@string/monthly_rent_price"
+        android:textColorHint="@color/teal_200"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/teal_700"
+        />
+
+    <EditText
+        android:id="@+id/txt_upd_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="5dp"
+        android:padding="20dp"
+        android:hint="@string/notes"
+        android:textColorHint="@color/teal_200"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/teal_700"
+        />
+
+    <EditText
+        android:id="@+id/txt_upd_rep_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="5dp"
+        android:padding="20dp"
+        android:hint="@string/reporter_name"
+        android:textColorHint="@color/teal_200"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/teal_700"
+        />
+
+    <Button
+        android:id="@+id/btn_update_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/update"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="17dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/buttons"
+        />
+
+</LinearLayout>

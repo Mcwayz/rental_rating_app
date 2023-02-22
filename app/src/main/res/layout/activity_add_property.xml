@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".AddPropertyActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_restaurant"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/teal_700"
+            >
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_restaurants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/lbl_close_add_property"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/back"
+                        android:textColor="@android:color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:layout_alignParentStart="true"
+                        />
+
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <ImageView
+            android:id="@+id/add_prop_image"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:cropToPadding="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/camera"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/app_bar_restaurant"
+            android:layout_marginTop="10dp"
+            />
+
+        <Spinner
+            android:id="@+id/spinner_prop_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_prop_image"
+            android:layout_marginTop="10dp"
+            android:padding="21dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/input_design"
+
+            />
+
+        <EditText
+            android:id="@+id/txt_prop_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:visibility="gone"
+
+            />
+
+        <EditText
+            android:id="@+id/txt_prop_bedrooms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_prop_type"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:hint="@string/bedrooms"
+            android:textColorHint="@color/teal_700"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/input_design"
+            android:textColor="@color/teal_200"
+            />
+
+
+        <EditText
+            android:id="@+id/txt_pick_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:layout_below="@+id/txt_prop_bedrooms"
+            android:layout_marginTop="10dp"
+            android:padding="20dp"
+            android:hint="@string/tap_to_add_date"
+            android:textColorHint="@color/teal_700"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/input_design"
+            android:textColor="@color/teal_200"
+            />
+
+        <EditText
+            android:id="@+id/txt_pick_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:layout_below="@id/txt_pick_date"
+            android:layout_marginTop="10dp"
+            android:padding="20dp"
+            android:hint="@string/tap_to_add_time"
+            android:textColorHint="@color/teal_700"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/input_design"
+            android:textColor="@color/teal_200"
+            />
+
+        <EditText
+            android:id="@+id/txt_rent_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_below="@id/txt_pick_time"
+            android:layout_marginTop="10dp"
+            android:padding="20dp"
+            android:hint="@string/monthly_rent_price"
+            android:textColorHint="@color/teal_700"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/input_design"
+            android:textColor="@color/teal_200"
+            />
+
+        <Spinner
+            android:id="@+id/spinner_furn_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_rent_price"
+            android:layout_marginTop="10dp"
+            android:padding="21dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/input_design"
+
+            />
+
+        <EditText
+            android:id="@+id/txt_furn_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:visibility="gone"
+
+            />
+
+        <EditText
+            android:id="@+id/txt_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:layout_below="@+id/spinner_furn_type"
+            android:layout_marginTop="10dp"
+            android:padding="20dp"
+            android:hint="@string/notes"
+            android:textColorHint="@color/teal_700"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/input_design"
+            android:textColor="@color/teal_200"
+            />
+
+        <EditText
+            android:id="@+id/txt_rep_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:layout_below="@id/txt_notes"
+            android:layout_marginTop="10dp"
+            android:padding="20dp"
+            android:hint="@string/reporter_name"
+            android:textColorHint="@color/teal_700"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/input_design"
+            android:textColor="@color/teal_200"
+            />
+
+        <Button
+            android:id="@+id/btn_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_rep_name"
+            android:text="@string/create"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="17dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:background="@drawable/buttons"
+
+            />
+
+    </RelativeLayout>
+
+</ScrollView>

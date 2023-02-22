@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="furnitureTypes">
+        <item>Furnished</item>
+        <item>Unfurnished</item>
+        <item>Part Furnished</item>
+    </string-array>
+</resources>

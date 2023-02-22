@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dialog_color"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/ImageViewRecord"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/camera"/>
+
+    <Spinner
+        android:id="@+id/spinner_prop_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageViewRecord"
+        android:layout_marginTop="10dp"
+        android:padding="21dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/input_design"
+
+        />
+
+    <EditText
+        android:id="@+id/txt_upd_prop_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:visibility="gone"
+
+        />
+
+    <EditText
+        android:id="@+id/txt_upd_bedroom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:visibility="gone"
+
+        />
+
+    <EditText
+        android:id="@+id/txt_upd_monthly_rent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:visibility="gone"
+
+        />
+
+    <Spinner
+        android:id="@+id/spinner_furn_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageViewRecord"
+        android:layout_marginTop="10dp"
+        android:padding="21dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/input_design"
+
+        />
+
+    <EditText
+        android:id="@+id/txt_upd_furnType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:visibility="gone"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/update"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="17dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/buttons"
+        />
+
+</LinearLayout>
